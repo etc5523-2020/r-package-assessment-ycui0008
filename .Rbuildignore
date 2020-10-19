@@ -1,2 +1,4 @@
+^yourPkg\.Rproj$
 ^\.Rproj\.user$
-^\.github$
+^LICENSE\.md$
+^data-raw$
