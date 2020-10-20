@@ -5,15 +5,24 @@
 \alias{covid}
 \title{Global covid-19 cases and deaths}
 \format{
-An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 68150 rows and 8 columns.
+A data frame with columns:
+\describe{
+\item{date_reported}{Date of reported cases and deaths.}
+\item{country_code}{Unique code for countries.}
+\item{country}{Full country names.}
+\item{who_region}{Region defined by WHO.}
+\item{new_cases, new_deaths}{New cases/deaths in last 24 hours.}
+\item{cumulative_cases, cumulative_deaths}{Total number of cases and deaths.}
+}
 }
 \source{
 World Health Organisation (WHO)
+\url{https://covid19.who.int/WHO-COVID-19-global-data.csv}, downloaded 2020-10-06
 }
 \usage{
 covid
 }
 \description{
-This dataset contains 225 countries
+This dataset contains covid-19 cases and deaths of 225 countries. The date of the dataset is 2020-10-06, originally.
 }
 \keyword{datasets}
