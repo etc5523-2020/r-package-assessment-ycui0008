@@ -8,7 +8,7 @@
 An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 68150 rows and 8 columns.
 }
 \source{
-World Health Organisation
+World Health Organisation (WHO)
 }
 \usage{
 covid
