@@ -71,19 +71,19 @@
 <a href="#covid19viewershiny" class="anchor"></a>covid19ViewerShiny</h1></div>
 <!-- badges: start -->
 <!-- badges: end -->
-<p>The goal of covid19ViewerShiny is to …</p>
+<p>The goal of <code>covid19ViewerShiny</code> is to monitor global covid-19 cases and deaths, and it can compare the covid-19 cases in different countries. The package contains map information — thus, it would take some time when you run it at beginning or you change date input in <code>Map</code> tab of the app.</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p>You can install the released version of covid19ViewerShiny from <a href="https://github.com/etc5523-2020/r-package-assessment-ycui0008">GitHub</a> with:</p>
+<p>You can install the released version of <code>covid19ViewerShiny</code> from <a href="https://github.com/etc5523-2020/r-package-assessment-ycui0008">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit">
 <span class="co"># install.packages("devtools")</span>
 <span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"etc5523-2020/r-package-assessment-ycui0008"</span><span class="op">)</span></pre></div>
 </div>
-<div id="example" class="section level2">
+<div id="dataset-example" class="section level2">
 <h2 class="hasAnchor">
-<a href="#example" class="anchor"></a>Example</h2>
-<p>This is a basic example which shows you how to solve a common problem:</p>
+<a href="#dataset-example" class="anchor"></a>Dataset example</h2>
+<p>This is a basic example which shows you how the dataset <code>covid</code> contained in the package looks like:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit">
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/etc5523-2020/r-package-assessment-ycui0008">covid19ViewerShiny</a></span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tibble.tidyverse.org/">tibble</a></span><span class="op">)</span>
@@ -104,6 +104,18 @@
 <span class="co">#&gt; # ... with 68,140 more rows, and 2 more variables: new_deaths &lt;dbl&gt;,</span>
 <span class="co">#&gt; #   cumulative_deaths &lt;dbl&gt;</span>
 <span class="co">## basic example code</span></pre></div>
+<p><code>covid</code> dataset is downloaded from <a href="https://covid19.who.int/table">WHO Coronavirus Disease Dashboard</a>. Every time library the package, the package would download the latest data from the website.</p>
+</div>
+<div id="run-covid19viewershiny" class="section level2">
+<h2 class="hasAnchor">
+<a href="#run-covid19viewershiny" class="anchor"></a>Run <code>covid19ViewerShiny</code>
+</h2>
+<p>After installing the package, type <code><a href="reference/runShinyPackageApp.html">runShinyPackageApp()</a></code> in the console to run the <code>covid19ViewerShiny</code> Shiny app.</p>
+</div>
+<div id="overview-of-the-shiny-app" class="section level2">
+<h2 class="hasAnchor">
+<a href="#overview-of-the-shiny-app" class="anchor"></a>Overview of the Shiny app</h2>
+<p><img src="shiny.png" width="100%"></p>
 </div>
 </div>
   </div>
