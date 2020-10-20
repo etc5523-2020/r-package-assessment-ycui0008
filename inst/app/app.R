@@ -8,10 +8,11 @@ library(shinythemes)
 library(leaflet)
 library(leaflet.providers)
 library(ggplot2)
+library(covid19ViewerShiny)
 
 # Data input
-covid <- read_csv(here::here("data/WHO-COVID-19-global-data.csv")) %>%
-    janitor::clean_names()
+# covid <- read_csv(here::here("data/WHO-COVID-19-global-data.csv")) %>%
+#     janitor::clean_names()
 
 # scrape from website
 # population <- read_html("https://www.worldometers.info/world-population/population-by-country/")

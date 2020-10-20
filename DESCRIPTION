@@ -28,3 +28,5 @@ Imports:
     leaflet,
     leaflet.providers,
     ggplot2
+Suggests: 
+    testthat
