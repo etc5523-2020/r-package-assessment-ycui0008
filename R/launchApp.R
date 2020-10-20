@@ -9,8 +9,7 @@
 #'
 #' @import shiny
 #'
-#' @example
-#' runShinyPackageApp()
+#' @example runShinyPackageApp()
 #'
 #' @export
 runShinyPackageApp <- function(){

@@ -7,11 +7,15 @@
 
 <!-- badges: end -->
 
-The goal of covid19ViewerShiny is to …
+The goal of `covid19ViewerShiny` is to monitor global covid-19 cases and
+deaths, and it can compare the covid-19 cases in different countries.
+The package contains map information — thus, it would take some time
+when you run it at beginning or you change date input in `Map` tab of
+the app.
 
 ## Installation
 
-You can install the released version of covid19ViewerShiny from
+You can install the released version of `covid19ViewerShiny` from
 [GitHub](https://github.com/etc5523-2020/r-package-assessment-ycui0008)
 with:
 
@@ -20,9 +24,10 @@ with:
 devtools::install_github("etc5523-2020/r-package-assessment-ycui0008")
 ```
 
-## Example
+## Dataset example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how the dataset `covid`
+contained in the package looks like:
 
 ``` r
 library(covid19ViewerShiny)
@@ -45,3 +50,16 @@ covid
 #> #   cumulative_deaths <dbl>
 ## basic example code
 ```
+
+`covid` dataset is downloaded from [WHO Coronavirus Disease
+Dashboard](https://covid19.who.int/table). Every time library the
+package, the package would download the latest data from the website.
+
+## Run `covid19ViewerShiny`
+
+After installing the package, type `runShinyPackageApp()` in the console
+to run the `covid19ViewerShiny` Shiny app.
+
+## Overview of the Shiny app
+
+<img src="shiny.png" width="100%" />
