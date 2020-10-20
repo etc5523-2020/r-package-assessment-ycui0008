@@ -3,12 +3,9 @@
 \name{runShinyPackageApp}
 \alias{runShinyPackageApp}
 \title{Run \verb{covid-19 Viewer} Shiny app}
-\source{
-
-}
 \usage{
 runShinyPackageApp()
 }
 \description{
-Run \verb{covid-19 Viewer} Shiny app
+Runs \verb{covid-19 Viewer} Shiny app contained in the \code{covid19ViewerShiny} package.
 }

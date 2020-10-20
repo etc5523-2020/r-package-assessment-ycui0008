@@ -3,8 +3,9 @@
 #'
 #'
 #' @description
+#' Runs `covid-19 Viewer` Shiny app contained in the `covid19ViewerShiny` package.
 #'
-#' @source
+#'
 #'
 #' @import shiny
 #'
@@ -14,7 +15,7 @@
 #' @export
 runShinyPackageApp <- function(){
   appDir <- system.file("app", package = "covid19ViewerShiny")
-  #
+
   # if (appDir == "") {
   #   stop("Could not find app directory. Try re-installing `covid19ViewerShiny`.", call. = FALSE)
   # }
