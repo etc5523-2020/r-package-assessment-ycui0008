@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # covid19ViewerShiny
 
 <!-- badges: start -->
+[![R build status](https://github.com/etc5523-2020/r-package-assessment-ycui0008/workflows/R-CMD-check/badge.svg)](https://github.com/etc5523-2020/r-package-assessment-ycui0008/actions)
 <!-- badges: end -->
 
 The goal of `covid19ViewerShiny` is to monitor global covid-19 cases and deaths, and it can compare the covid-19 cases in different countries. The package contains map information --- thus, it would take some time when you run it at beginning or you change date input in `Map` tab of the app.
