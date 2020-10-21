@@ -59,9 +59,9 @@ package, the package would download the latest data from the website.
 
 ## Run `covid19ViewerShiny`
 
-After installing the package, type `runShinyPackageApp()` in the console
-to run the `covid19ViewerShiny` Shiny app.
+After installing the package, type `launch_app()` in the console to run
+the `covid19ViewerShiny` Shiny app.
 
 ## Overview of the Shiny app
 
-<img src="shiny.png" width="100%" />
+<img src="man/image/shiny.png" width="100%" />

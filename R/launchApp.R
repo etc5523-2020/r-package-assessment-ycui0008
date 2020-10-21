@@ -9,10 +9,10 @@
 #'
 #' @import shiny
 #'
-#' @example runShinyPackageApp()
+#' @example launch_app()
 #'
 #' @export
-runShinyPackageApp <- function(){
+launch_app <- function(){
   appDir <- system.file("app", package = "covid19ViewerShiny")
 
   # if (appDir == "") {

@@ -46,11 +46,11 @@ covid
 
 ## Run `covid19ViewerShiny`
 
-After installing the package, type `runShinyPackageApp()` in the console to run the `covid19ViewerShiny` Shiny app.
+After installing the package, type `launch_app()` in the console to run the `covid19ViewerShiny` Shiny app.
 
 ## Overview of the Shiny app
 
 ```{r overview, echo = FALSE}
-knitr::include_graphics("shiny.png")
+knitr::include_graphics("man/image/shiny.png")
 ```
 

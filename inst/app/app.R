@@ -86,11 +86,12 @@ ui <- fluidPage(
                                         a("WHO website",href = "https://covid19.who.int/WHO-COVID-19-global-data.csv"),
                                         " and put it into data folder.")))),
                         # select countries
-                        pickerInput("country_select1", "Country:",
-                                    choices = unique(covid$country),
-                                    options = list(`actions-box` = TRUE, `none-selected-text` = "Please make a selection!"),
-                                    selected = unique(covid$country)[1:10],
-                                    multiple = TRUE),
+                        # pickerInput("country_select1", "Country:",
+                        #             choices = unique(covid$country),
+                        #             options = list(`actions-box` = TRUE, `none-selected-text` = "Please make a selection!"),
+                        #             selected = unique(covid$country)[1:10],
+                        #             multiple = TRUE),
+                        multiSelection("country_select1", "Country:", covid$country),
                         dataTableOutput("table1")),
                tabPanel("Graphs", fluid = TRUE, icon = icon("chart-bar"),
                         # select end date
@@ -149,24 +150,30 @@ server <- function(input, output) {
         end_date <- input$end_date
 
         # cumulative deaths col plot
-        p1 <- covid %>%
-            filter(date_reported == input$end_date2 & country %in% input$country_select1) %>%
-            arrange(-cumulative_deaths) %>%
-            head(5) %>%
-            ggplot(aes(x = reorder(country, cumulative_deaths), y = cumulative_deaths)) +
-            geom_col(fill = 'red') +
-            ggtitle("Cumulative deaths") +
-            coord_flip()
+        # p1 <- covid %>%
+        #     filter(date_reported == input$end_date2 & country %in% input$country_select1) %>%
+        #     arrange(-cumulative_deaths) %>%
+        #     head(5) %>%
+        #     ggplot(aes(x = reorder(country, cumulative_deaths), y = cumulative_deaths)) +
+        #     geom_col(fill = 'red') +
+        #     ggtitle("Cumulative deaths") +
+        #     coord_flip()
+
+        p1 <- colPlot(data = covid, date = input$end_date2, color = 'red', varName = cumulative_deaths,
+                      title = "Cumulative deaths")
 
         # cumulative cases col plot
-        p2 <- covid %>%
-            filter(date_reported == input$end_date2 & country %in% input$country_select1) %>%
-            arrange(-cumulative_cases) %>%
-            head(5) %>%
-            ggplot(aes(x = reorder(country, cumulative_cases), y = cumulative_cases)) +
-            geom_col(fill = 'blue') +
-            ggtitle("Cumulative cases")+
-            coord_flip()
+        # p2 <- covid %>%
+        #     filter(date_reported == input$end_date2 & country %in% input$country_select1) %>%
+        #     arrange(-cumulative_cases) %>%
+        #     head(5) %>%
+        #     ggplot(aes(x = reorder(country, cumulative_cases), y = cumulative_cases)) +
+        #     geom_col(fill = 'blue') +
+        #     ggtitle("Cumulative cases")+
+        #     coord_flip()
+
+        p2 <- colPlot(data = covid, date = input$end_date2, color = 'blue', varName = cumulative_cases,
+                      title = "Cumulative cases")
 
         # combine them together
         grid.arrange(p1,p2, ncol = 2)})
@@ -217,7 +224,6 @@ server <- function(input, output) {
 
     output$leaflet_map_cases <- renderLeaflet({
         df1 <- covid %>%
-            # left_join(pop_table, by = c("country" = "country")) %>%
             left_join(map, by = c("country" = "region")) %>%
             filter(date_reported == input$end_date3)
 
@@ -235,11 +241,13 @@ server <- function(input, output) {
             addProviderTiles(providers$CartoDB.Positron) %>%
             addCircleMarkers(lat = ~lat_mean, lng = ~long_mean, weight = 1, radius = ~(cumulative_cases)^0.2,
                              fillOpacity = 0.009, group = "cumulative_cases")
+
+        # leaflet_cicle(df2, weight = 1, varName = cumulative_cases, r = 0.2, fillOpacity = 0.009, group = "cumulative_cases")
+
     })
 
     output$leaflet_map_deaths <- renderLeaflet({
         df1 <- covid %>%
-            # left_join(pop_table, by = c("country" = "country")) %>%
             left_join(map, by = c("country" = "region")) %>%
             filter(date_reported == input$end_date3)
 
