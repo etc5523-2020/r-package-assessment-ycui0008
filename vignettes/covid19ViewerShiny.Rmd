@@ -17,3 +17,20 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(covid19ViewerShiny)
 ```
+
+
+### How to use `Covid-19 view`
+
+This App is used to monitor global covid-19 cases and deaths, and it can compare the covid-19 cases in different countries.
+
+There are four tabs: `Map`, `Table`, `Graphs`, and `About.
+
+* `Map`: This tab has two leaflet maps. The first one shows the global `cumulative_cases`. The second one shows the global `cumulative_deaths`. Because the dataset contains huge amount of values, the leaflet maps take much time to run. So, please be patient.
+* `Table`: This tab shows the latest covid-19 `new_cases`, `cumulative_cases`, `new_deaths`, and `cumulative_deaths` of selected countries. User can select multiple countries to compare them.
+* `Graphs`: There are one column plot and one line plot in this tab. The column plot help user compare the latest `cumulative_cases` and `cumulative_deaths` of selected countries. The line plot tells user the `new_cases` and `new_deaths` of selected countries. With these two plots, user can understand how successful selected countries control the coronavirus pandemic.
+* `About`: This tab has short introduction about `Covid-19 viewer` and its creator. It also contains the `Acknowledgments` and `References` sections.
+
+```{r info, echo = FALSE}
+sessionInfo(package = c("shiny", "readr", "tidyverse", "plotly", "gridExtra", "shinyWidgets", "leaflet", "leaflet.providers", "ggplot2"))
+```
+

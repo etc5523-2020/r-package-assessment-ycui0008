@@ -13,7 +13,9 @@
 #'
 #'
 #' @import ggplot2
-#' @import dplyr
+#' @importFrom stats reorder
+#' @importFrom stats filter
+#' @importFrom utils head
 #'
 #' @examples
 #' colPlot(data = covid, date = input$end_date2, color = 'red', varName = cumulative_deaths, title = "Cumulative deaths")
@@ -21,7 +23,7 @@
 #' @export
 colPlot <- function(data, date, color, varName, title){
   data %>%
-    dplyr::filter(date_reported == {{date}}) %>%
+    filter(date_reported == {{date}}) %>%
     arrange(desc({{varName}})) %>%
     head(5) %>%
     ggplot2::ggplot(aes(x = reorder(country, {{varName}}), y = {{varName}})) +

@@ -27,7 +27,9 @@ Imports:
     shinythemes,
     leaflet,
     leaflet.providers,
-    ggplot2
+    ggplot2,
+    magrittr,
+    dplyr
 Suggests: 
     testthat,
     knitr,
