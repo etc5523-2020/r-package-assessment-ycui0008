@@ -50,7 +50,7 @@ After installing the package, type `launch_app()` in the console to run the `cov
 
 ## Overview of the Shiny app
 
-```{r overview, echo = FALSE}
-knitr::include_graphics("man/image/shiny.png")
+```{r overview, echo = FALSE, eval = FALSE}
+# knitr::include_graphics("man/image/shiny.png")
 ```
 

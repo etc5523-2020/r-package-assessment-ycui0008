@@ -6,3 +6,5 @@ test_that("multiSelection cannot have NULL", {
   expect_error(multiSelection(selection = NULL))
   expect_error(multiSelection(id = ))
 })
+
+

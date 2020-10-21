@@ -33,6 +33,8 @@ contained in the package looks like:
 
 ``` r
 library(covid19ViewerShiny)
+#> Warning: replacing previous import 'vctrs::data_frame' by 'tibble::data_frame'
+#> when loading 'dplyr'
 library(tibble)
 covid
 #> # A tibble: 68,150 x 8
@@ -63,5 +65,3 @@ After installing the package, type `launch_app()` in the console to run
 the `covid19ViewerShiny` Shiny app.
 
 ## Overview of the Shiny app
-
-<img src="man/image/shiny.png" width="100%" />
