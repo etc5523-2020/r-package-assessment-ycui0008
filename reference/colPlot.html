@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • covid19ViewerShiny</title>
+<title>colPlot function — colPlot • covid19ViewerShiny</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,8 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="colPlot function — colPlot" />
+<meta property="og:description" content="This function is used to create column plot." />
 
 
 
@@ -58,7 +59,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -108,60 +109,52 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>colPlot function</h1>
+    <small class="dont-index">Source: <a href='https://github.com/etc5523-2020/r-package-assessment-ycui0008/blob/master/R/serverFunction.R'><code>R/serverFunction.R</code></a></small>
+    <div class="hidden name"><code>colPlot.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>This function is used to create column plot.</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>colPlot</span><span class='op'>(</span><span class='va'>data</span>, <span class='va'>date</span>, <span class='va'>color</span>, <span class='va'>varName</span>, <span class='va'>title</span><span class='op'>)</span></pre>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      
-      
-    </tbody><tbody>
-      
-      
-      <tr>
-        
-        <td>
-          <p><code><a href="colPlot.html">colPlot()</a></code> </p>
-        </td>
-        <td><p>colPlot function</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="covid.html">covid</a></code> </p>
-        </td>
-        <td><p>Global covid-19 cases and deaths</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="launch_app.html">launch_app()</a></code> </p>
-        </td>
-        <td><p>Run <code>covid-19 Viewer</code> Shiny app</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="multiSelection.html">multiSelection()</a></code> </p>
-        </td>
-        <td><p>Create a multiSelection drop list</p></td>
-      </tr>
-    </tbody>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>data</th>
+      <td><p>Input dataset.</p></td>
+    </tr>
+    <tr>
+      <th>date</th>
+      <td><p>End date.</p></td>
+    </tr>
+    <tr>
+      <th>color</th>
+      <td><p>Color of the columns in the plot.</p></td>
+    </tr>
+    <tr>
+      <th>varName</th>
+      <td><p>Variable name. The variable name must be within the dataset --- <code>data</code>.</p></td>
+    </tr>
+    <tr>
+      <th>title</th>
+      <td><p>Title of the col plot.</p></td>
+    </tr>
     </table>
-  </div>
 
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>colPlot</span><span class='op'>(</span>data <span class='op'>=</span> <span class='va'>covid</span>, date <span class='op'>=</span> <span class='va'>input</span><span class='op'>$</span><span class='va'>end_date2</span>, color <span class='op'>=</span> <span class='st'>'red'</span>, varName <span class='op'>=</span> <span class='va'>cumulative_deaths</span>, title <span class='op'>=</span> <span class='st'>"Cumulative deaths"</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; <span class='error'>Error: Problem with `filter()` input `..1`.</span>
+#&gt; <span class='error'><span style='color: #BB0000;'>✖</span><span> object 'input' not found</span>
+#&gt; <span class='error'></span><span style='color: #0000BB;'>ℹ</span><span> Input `..1` is `date_reported == input$end_date2`.</span></div><div class='input'>
+</div></span></pre>
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
