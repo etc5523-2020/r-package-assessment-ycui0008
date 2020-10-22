@@ -33,8 +33,6 @@ contained in the package looks like:
 
 ``` r
 library(covid19ViewerShiny)
-#> Warning: replacing previous import 'vctrs::data_frame' by 'tibble::data_frame'
-#> when loading 'dplyr'
 library(tibble)
 covid
 #> # A tibble: 68,150 x 8
