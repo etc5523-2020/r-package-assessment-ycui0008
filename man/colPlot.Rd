@@ -20,7 +20,3 @@ colPlot(data, date, color, varName, title)
 \description{
 This function is used to create column plot.
 }
-\examples{
-colPlot(data = covid, date = input$end_date2, color = 'red', varName = cumulative_deaths, title = "Cumulative deaths")
-
-}
