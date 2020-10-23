@@ -1,0 +1,25 @@
+---
+title: "What is covid-19."
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{What is covid-19.}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+### About Covid-19
+
+COVID-19 is a contagious respiratory and vascular (blood vessel) disease. It is caused by becoming infected with severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), which is a specific type of coronavirus. Common symptoms include fever, cough, fatigue, shortness of breath or breathing difficulties, and loss of smell and taste. (from [wiki](https://en.wikipedia.org/wiki/Coronavirus_disease_2019))
+
+In 2020, except a few countries, such as China and Vietnam, all other countries are facing severe GDP decrease.
+
+### Motivation to make this package and the shiny app
+
+This is the first global epidemic situation since 1918 flu pandemic. There is no doubts that the world will be changed because of covid-19, economically and politically. It is interesting to monitor how each country controlling the coronavirus pandemic, because it may give us a clue of the efficiency and effectiveness of the management ability of different governments.

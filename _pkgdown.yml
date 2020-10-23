@@ -1,3 +1,23 @@
 template:
   params:
     bootswatch: darkly
+
+navbar:
+  structure:
+    left: [intro, articles]
+    right: [github]
+  components:
+    home: ~
+    intro:
+      text: Backgroud
+      href: articles/covid_intro.html
+    articles:
+     text: Articles
+     menu:
+     - text: About the covid dataset
+       href: articles/covid.html
+     - text: About the covid19ViewerShiny
+       href: articles/covid19ViewerShiny.html
+    github:
+      icon: fa-github
+      href: https://github.com/etc5523-2020/r-package-assessment-ycui0008

@@ -1,7 +1,7 @@
 #' Global covid-19 cases and deaths
 #'
 #' @description
-#' This dataset contains covid-19 cases and deaths of 225 countries. The date of the dataset is 2020-10-06, originally.
+#' This dataset contains covid-19 cases and deaths of 225 countries. The date of the dataset is 2020-10-18, originally.
 #'
 #' @format  A data frame with columns:
 #' \describe{

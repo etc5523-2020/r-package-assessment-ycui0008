@@ -50,7 +50,6 @@ covid
 #> 10 2020-01-12    AF           Afghan~ EMRO               0                0
 #> # ... with 68,140 more rows, and 2 more variables: new_deaths <dbl>,
 #> #   cumulative_deaths <dbl>
-## basic example code
 ```
 
 `covid` dataset is downloaded from [WHO Coronavirus Disease
@@ -61,7 +60,10 @@ Dashboard](https://covid19.who.int/table).
 After installing the package, type `launch_app()` in the console to run
 the `covid19ViewerShiny` Shiny app.
 
-## More about the Shiny app
+## More about this package
+
+Full instruction please see in [my pkgdown
+website](https://etc5523-2020.github.io/r-package-assessment-ycui0008/).
 
 I also wrote a
 [blog](https://ycui0008-blog.netlify.app/post/shiny-app-covid-19-viewer/)

@@ -1,0 +1,41 @@
+---
+title: "About covid dataset"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{About covid dataset}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+### Overview of `covid` dataset
+
+```{r setup}
+library(covid19ViewerShiny)
+library(tibble)
+covid
+```
+
+`covid` dataset is downloaded from [WHO Coronavirus Disease Dashboard](https://covid19.who.int/table). 
+
+This dataset contains covid-19 cases and deaths of 225 countries. The date of the dataset is 2020-10-18, originally.
+
+### Variables in the dataset
+
+* `date_reported`: Date of reported cases and deaths.
+
+* `country_code`: Unique code for countries.
+
+* `country`: Full country names.
+
+* `who_region`: Region defined by WHO.
+
+* `new_cases`, `new_deaths`:  New cases/deaths in last 24 hours.
+
+* `cumulative_cases`, `cumulative_deaths`: Total number of cases and deaths.

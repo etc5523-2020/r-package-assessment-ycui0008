@@ -19,7 +19,7 @@ library(covid19ViewerShiny)
 ```
 
 
-### How to use `Covid-19 view`
+### How to use `Covid-19 viewer`
 
 To run the Shiny app, user only need to enter `launch_app()`.
 
