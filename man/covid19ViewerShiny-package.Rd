@@ -6,7 +6,7 @@
 \alias{covid19ViewerShiny-package}
 \title{covid19ViewerShiny: A Shiny App Visualising Global Covid19 Cases And Deaths}
 \description{
-What the package does (one paragraph).
+This package contains WHO covid dataset and a Shiny app that can monitor global covid-19 cases and compare the cases by countries.
 }
 \seealso{
 Useful links:

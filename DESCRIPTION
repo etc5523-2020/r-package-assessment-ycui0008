@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "ycui0008@student.monash.edu",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: This package contains WHO covid dataset and a Shiny app that can monitor global covid-19 cases and compare the cases by countries.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

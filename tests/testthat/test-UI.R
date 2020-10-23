@@ -16,3 +16,9 @@ test_that("multiSelection id and inputDisplay must be character",{
 
 
 
+test_that("Enter valid dataset name", {
+
+  expect_equal(ncol(covid), 8)
+
+
+})

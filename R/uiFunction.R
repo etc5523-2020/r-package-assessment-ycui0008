@@ -29,6 +29,7 @@ multiSelection <- function(id, inputDisplay = " ", selection = covid$country){
 
   if (!is.character(inputDisplay))
     stop("inputDisplay must be character.")
+
   # selection must be vector
   if (!is.vector(selection))
     stop("selection must be vector.")

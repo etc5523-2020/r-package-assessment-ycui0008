@@ -4,7 +4,7 @@
 \alias{multiSelection}
 \title{Create a multiSelection drop list}
 \usage{
-multiSelection(id, inputDisplay, selection)
+multiSelection(id, inputDisplay = " ", selection = covid$country)
 }
 \arguments{
 \item{id}{id name of the input, it must be a character}

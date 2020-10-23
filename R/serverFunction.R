@@ -8,8 +8,8 @@
 #' @param data Input dataset.
 #' @param date End date.
 #' @param color Color of the columns in the plot.
-#' @param varName Variable name. The variable name must be within the dataset --- `data`.
-#' @param title Title of the col plot.
+#' @param varName Variable name. Recommend user enter either `cumulative_cases` or `cumulative_deaths` here.
+#' @param title Optional. Title of the col plot.
 #'
 #'
 #' @import ggplot2
@@ -19,7 +19,13 @@
 #'
 #'
 #' @export
-colPlot <- function(data, date, color, varName, title){
+colPlot <- function(data = covid, date = input$end_date2, color = 'red', varName, title){
+
+  if (ncol(data) != ncol(covid))
+    stop("Please enter valid data name")
+
+
+
   data %>%
     dplyr::filter(date_reported == {{date}}) %>%
     dplyr::arrange(desc({{varName}})) %>%

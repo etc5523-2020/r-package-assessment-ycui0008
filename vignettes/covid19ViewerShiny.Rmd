@@ -21,6 +21,11 @@ library(covid19ViewerShiny)
 
 ### How to use `Covid-19 view`
 
+To run the Shiny app, user only need to enter `launch_app()`.
+
+
+### About the tabs inside the Shiny app
+
 This App is used to monitor global covid-19 cases and deaths, and it can compare the covid-19 cases in different countries.
 
 There are four tabs: `Map`, `Table`, `Graphs`, and `About.

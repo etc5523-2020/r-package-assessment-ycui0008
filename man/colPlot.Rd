@@ -4,7 +4,7 @@
 \alias{colPlot}
 \title{colPlot function}
 \usage{
-colPlot(data, date, color, varName, title)
+colPlot(data = covid, date = input$end_date2, color = "red", varName, title)
 }
 \arguments{
 \item{data}{Input dataset.}
@@ -13,9 +13,9 @@ colPlot(data, date, color, varName, title)
 
 \item{color}{Color of the columns in the plot.}
 
-\item{varName}{Variable name. The variable name must be within the dataset --- \code{data}.}
+\item{varName}{Variable name. Recommend user enter either \code{cumulative_cases} or \code{cumulative_deaths} here.}
 
-\item{title}{Title of the col plot.}
+\item{title}{Optional. Title of the col plot.}
 }
 \description{
 This function is used to create column plot.

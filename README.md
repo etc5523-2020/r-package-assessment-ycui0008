@@ -54,12 +54,16 @@ covid
 ```
 
 `covid` dataset is downloaded from [WHO Coronavirus Disease
-Dashboard](https://covid19.who.int/table). Every time library the
-package, the package would download the latest data from the website.
+Dashboard](https://covid19.who.int/table).
 
 ## Run `covid19ViewerShiny`
 
 After installing the package, type `launch_app()` in the console to run
 the `covid19ViewerShiny` Shiny app.
 
-## Overview of the Shiny app
+## More about the Shiny app
+
+I also wrote a
+[blog](https://ycui0008-blog.netlify.app/post/shiny-app-covid-19-viewer/)
+about `Covid-19 Viewer`. There is more information about the Shiny app
+in the blog article.
