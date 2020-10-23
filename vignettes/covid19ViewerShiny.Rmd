@@ -14,15 +14,18 @@ knitr::opts_chunk$set(
 )
 ```
 
+### How to use `Covid-19 viewer`
+
 ```{r setup}
 library(covid19ViewerShiny)
 ```
 
 
-### How to use `Covid-19 viewer`
 
-To run the Shiny app, user only need to enter `launch_app()`.
 
+After `library(covid19ViewerShiny)`, user only need to enter `launch_app()` to run the Shiny app.
+
+The app will be slowly reloaded because of the large size of `covid` dataset. So, please be patient and give it some time.
 
 ### About the tabs inside the Shiny app
 
@@ -35,5 +38,7 @@ There are four tabs: `Map`, `Table`, `Graphs`, and `About.
 * `Graphs`: There are one column plot and one line plot in this tab. The column plot help user compare the latest `cumulative_cases` and `cumulative_deaths` of selected countries. The line plot tells user the `new_cases` and `new_deaths` of selected countries. With these two plots, user can understand how successful selected countries control the coronavirus pandemic.
 * `About`: This tab has short introduction about `Covid-19 viewer` and its creator. It also contains the `Acknowledgments` and `References` sections.
 
+### How to use the Shiny app
 
+User can simply move the slide bars in the app and select different countries. The plot will change according to your selection (except two column plots in the `Graph` tab, they are fixed).
 

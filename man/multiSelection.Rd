@@ -14,7 +14,7 @@ multiSelection(id, inputDisplay = " ", selection = covid$country)
 \item{selection}{A list of character.}
 }
 \description{
-This function can help user to create a drop list.
+This function can help user to create a drop list in the Shiny app.
 }
 \examples{
 multiSelection("country_select1", "Country:", covid$country)

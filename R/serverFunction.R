@@ -1,7 +1,7 @@
 #' colPlot function
 #'
 #' @description
-#' This function is used to create column plot.
+#' This function is used to create column plot in the Shiny app.
 #'
 #'
 #'

@@ -2,7 +2,7 @@ globalVariables("covid$country")
 #' Create a multiSelection drop list
 #'
 #' @description
-#' This function can help user to create a drop list.
+#' This function can help user to create a drop list in the Shiny app.
 #'
 #' @param id id name of the input, it must be a character
 #' @param inputDisplay The name of the selection drop list

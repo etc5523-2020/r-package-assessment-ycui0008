@@ -18,5 +18,5 @@ colPlot(data = covid, date = input$end_date2, color = "red", varName, title)
 \item{title}{Optional. Title of the col plot.}
 }
 \description{
-This function is used to create column plot.
+This function is used to create column plot in the Shiny app.
 }
